@@ -26,6 +26,9 @@ UX assignment mock up - CSS assignment
 - Minimum Grid column width: 220px
 - Used auto-fit and minmax to adjust columns without media queries.
 
+- Footer Grid placement: spans from line 1 to line 3.
+- Confirmed in Chrome DevTools that the footer covers both columns.
+
 ### Product Card Measurements
 
 - 1200px browser width: 4 columns

@@ -17,8 +17,41 @@ UX assignment mock up - CSS assignment
 - Auto-fit and minmax adjust the gallery without media queries.
 - Footer Grid placement: line 1 to line 3, verified in DevTools.
 
+### Product Card Measurements
+
+- 1200px browser width: 4 columns
+- Card width: 220px
+- Card height: 350.5px
+
+- 600px browser width: 1 column
+- Card width: 340px
+- Card height: 350.5px
+
+- Minimum Grid column width: 220px
+- Used auto-fit and minmax so the number of columns adjusts automatically without a media query.
+
 ### Figma Design
 The original Backroad Blooms mockup was designed for mobile.
 The desktop version keeps the original colours, typography,
 product sections and branding, while adapting the mobile menu
 into a desktop sidebar.
+
+## Colours and Fonts
+
+### Colours
+- #454D3E - Dark green (headings, sidebar, text)
+- #FFFBEF - Cream (background)
+- #F7D38F - Yellow (buttons and accents)
+- #C27F5F - Rust (featured labels)
+- #FFFFFF - White (product cards)
+
+### Fonts
+Poppins is used for headings and Nunito Sans for the rest of the text.
+
+- Main heading: 32px, line height 38.4px
+- Section headings: 24px, line height 31.2px
+- Product names: 16px, line height 22.4px
+- About subheadings: 18px, line height 25.2px
+- Body text: 16px, line height 24px
+- Navigation: 16px, line height 24px
+- Social media text: 13px, line height 19.5px

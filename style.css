@@ -1,0 +1,93 @@
+/* STEP 4: Basic colours, fonts and page spacing */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #fffbef;
+  color: #454d3e;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Header and simple navigation */
+.site-header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 24px 20px;
+  border-bottom: 2px solid #454d3e;
+}
+
+.brand {
+  display: grid;
+  grid-template-columns: 75px 1fr;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  width: 75px;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.social-names {
+  margin: 8px 0 0;
+  font-size: 13px;
+}
+
+.cart-label {
+  background-color: #f7d38f;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+nav {
+  grid-column: 1 / 3;
+  margin-top: 20px;
+}
+
+nav a {
+  display: inline-block;
+  margin-right: 20px;
+  color: #454d3e;
+  text-decoration: none;
+}
+
+nav a:hover, nav a:focus {
+  text-decoration: underline;
+}
+
+/* Search box */
+main {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.search-area {
+  margin: 20px 0 40px;
+}
+
+.search-area label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.search-area input {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px;
+  border: 1px solid #454d3e;
+  border-radius: 8px;
+}

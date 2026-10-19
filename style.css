@@ -91,3 +91,75 @@ main {
   border: 1px solid #454d3e;
   border-radius: 8px;
 }
+
+/* STEP 5: CSS Grid for product rows */
+.shop-section {
+  margin-bottom: 50px;
+}
+
+.shop-section h2 {
+  margin-bottom: 8px;
+}
+
+.eyebrow {
+  color: #c27f5f;
+  margin-bottom: 4px;
+}
+
+.product-grid {
+  display: grid;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.four-columns {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.three-columns {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.product-card {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.product-card h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.cart-button {
+  display: block;
+  padding: 10px;
+  background-color: #f7d38f;
+  color: #454d3e;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+/* STEP 5: About section and footer */
+.about-section {
+  background-color: #454d3e;
+  color: #fffbef;
+  padding: 30px;
+}
+
+.about-section h3 {
+  color: #f7d38f;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+}

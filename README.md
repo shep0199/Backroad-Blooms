@@ -30,23 +30,13 @@ UX assignment mock up - CSS assignment
 - Minimum Grid column width: 220px
 - Used auto-fit and minmax so the number of columns adjusts automatically without a media query.
 
-### Figma Design
-The original Backroad Blooms mockup was designed for mobile.
-
-The desktop version keeps the original colours, typography, product sections and branding, while adapting the mobile menu
-into a desktop sidebar.
-
 ### Design Adaptation Notes
 
-The original Figma design was created at a mobile
-width of 390px.
+My original Backroad Blooms Figma design was created for a 390px mobile screen. For this assignment, I adapted it into a desktop layout using CSS Grid, with a 220px sidebar and a flexible main content area.
 
-This assignment uses a desktop adaptation with a 220px sidebar and a flexible main content area.
+I kept the same colours, fonts, branding and product sections, but changed the mobile navigation menu into a desktop sidebar.
 
-At very narrow mobile widths, the current desktop layout overflows because the sidebar and minimum
-product width require more horizontal space.
-
-The desktop layout was prioritized for the Grid assignment.
+The layout was built for desktop, so some content may overflow at smaller mobile widths.
 
 ## Colours and Fonts
 

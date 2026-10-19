@@ -32,9 +32,21 @@ UX assignment mock up - CSS assignment
 
 ### Figma Design
 The original Backroad Blooms mockup was designed for mobile.
-The desktop version keeps the original colours, typography,
-product sections and branding, while adapting the mobile menu
+
+The desktop version keeps the original colours, typography, product sections and branding, while adapting the mobile menu
 into a desktop sidebar.
+
+### Design Adaptation Notes
+
+The original Figma design was created at a mobile
+width of 390px.
+
+This assignment uses a desktop adaptation with a 220px sidebar and a flexible main content area.
+
+At very narrow mobile widths, the current desktop layout overflows because the sidebar and minimum
+product width require more horizontal space.
+
+The desktop layout was prioritized for the Grid assignment.
 
 ## Colours and Fonts
 

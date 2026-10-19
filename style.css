@@ -179,9 +179,11 @@ main {
   color: #f7d38f;
 }
 
-/* Footer sits in the bottom Grid region */
+/* Explicit Grid placement */
+/* Footer spans both columns from line 1 to line 3 */
 footer {
   grid-area: footer;
+  grid-column: 1 / span 2;
   padding: 20px;
   text-align: center;
 }

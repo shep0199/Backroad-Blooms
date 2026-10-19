@@ -12,10 +12,19 @@ UX assignment mock up - CSS assignment
 - Flexbox stacks the sidebar navigation links vertically.
 
 ### Grid Testing
-- Full browser width: 1200px, 4 product columns.
-- Half browser width: 600px, 1 product column.
-- Auto-fit and minmax adjust the gallery without media queries.
-- Footer Grid placement: line 1 to line 3, verified in DevTools.
+
+- Desktop browser width: 1200px
+- Product columns: 4
+- Card width: 220px
+- Card height: 350.5px
+
+- Half browser width: 600px
+- Product columns: 1
+- Card width: 340px
+- Card height: 350.5px
+
+- Minimum Grid column width: 220px
+- Used auto-fit and minmax to adjust columns without media queries.
 
 ### Product Card Measurements
 
@@ -29,6 +38,40 @@ UX assignment mock up - CSS assignment
 
 - Minimum Grid column width: 220px
 - Used auto-fit and minmax so the number of columns adjusts automatically without a media query.
+
+# Spacing
+
+### Layout
+- Header padding: 24px top/bottom, 20px left/right
+- Logo to shop name gap: 20px
+- Social media text: 8px above
+- Sidebar padding: 24px top/bottom, 16px left/right
+- Sidebar link gap: 16px
+- Main content padding: 20px (max width 1120px)
+- Footer padding: 20px
+
+### Content
+- Search area: 20px above, 40px below
+- Search label: 8px below
+- Search input padding: 12px (max width 400px)
+- Space between shop sections: 50px
+- Section heading: 8px below
+- Featured label: 4px below
+- About section padding: 30px
+
+### Product Cards
+- Gap between cards: 20px
+- Space above product grid: 20px
+- Card padding: 15px
+- Card image height: 180px
+- Product name: 5px below
+- Button padding: 10px
+- Cart label padding: 10px
+
+### Corner Radius
+- Product cards: 12px
+- Images, buttons, cart label and search input: 8px
+
 
 ### Design Adaptation Notes
 
@@ -48,12 +91,12 @@ The layout was built for desktop, so some content may overflow at smaller mobile
 - #FFFFFF - White (product cards)
 
 ### Fonts
-Poppins is used for headings and Nunito Sans for the rest of the text.
+Poppins is used for headings and Nunito Sans for body text.
 
-- Main heading: 32px, line height 38.4px
-- Section headings: 24px, line height 31.2px
-- Product names: 16px, line height 22.4px
-- About subheadings: 18px, line height 25.2px
-- Body text: 16px, line height 24px
-- Navigation: 16px, line height 24px
-- Social media text: 13px, line height 19.5px
+- Main heading: Poppins, 32px, line height 38.4px
+- Section headings: Poppins, 24px, line height 31.2px
+- Product names: Poppins, 16px, line height 22.4px
+- About subheadings: Poppins, 18px, line height 25.2px
+- Body text: Nunito Sans, 16px, line height 24px
+- Navigation: Nunito Sans, 16px, line height 24px
+- Social media text: Nunito Sans, 13px, line height 19.5px

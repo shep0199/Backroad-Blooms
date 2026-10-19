@@ -9,6 +9,9 @@ body {
   background-color: #fffbef;
   color: #454d3e;
   font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+
 
   /* Grid organizes the main page regions */
   display: grid;
@@ -21,6 +24,12 @@ body {
 
 h1, h2, h3 {
   font-family: "Poppins", sans-serif;
+}
+
+/* Heading size and line height */
+h2 {
+  font-size: 24px;
+  line-height: 1.3;
 }
 
 /* Grid separates the branding and cart into columns */
@@ -47,6 +56,7 @@ h1, h2, h3 {
 .site-header h1 {
   margin: 0;
   font-size: 32px;
+  line-height: 1.2;
 }
 
 .social-names {
@@ -115,6 +125,7 @@ main {
   padding: 12px;
   border: 1px solid #454d3e;
   border-radius: 8px;
+  font: inherit;
 }
 
 /* STEP 5: CSS Grid for product rows */
@@ -156,6 +167,7 @@ main {
 .product-card h3 {
   font-size: 16px;
   margin-bottom: 5px;
+  line-height: 1.4;
 }
 
 .cart-button {
@@ -177,6 +189,8 @@ main {
 
 .about-section h3 {
   color: #f7d38f;
+  font-size: 18px;
+  line-height: 1.4;
 }
 
 /* Explicit Grid placement */

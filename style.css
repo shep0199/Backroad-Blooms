@@ -3,31 +3,39 @@
   box-sizing: border-box;
 }
 
+/* Main page Grid layout */
 body {
   margin: 0;
   background-color: #fffbef;
   color: #454d3e;
   font-family: "Nunito Sans", sans-serif;
+
+  /* Grid organizes the main page regions */
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
 }
 
 h1, h2, h3 {
   font-family: "Poppins", sans-serif;
 }
 
-/* Header and simple navigation */
+/* Grid separates the branding and cart into columns */
 .site-header {
+  grid-area: header;
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: center;
-  max-width: 1120px;
-  margin: 0 auto;
   padding: 24px 20px;
   border-bottom: 2px solid #454d3e;
 }
 
+/* Flexbox keeps the logo and shop name in one row */
 .brand {
-  display: grid;
-  grid-template-columns: 75px 1fr;
+  display: flex;
   align-items: center;
   gap: 20px;
 }
@@ -52,24 +60,41 @@ h1, h2, h3 {
   border-radius: 8px;
 }
 
-nav {
-  grid-column: 1 / 3;
-  margin-top: 20px;
+/* Sidebar belongs to the main page Grid */
+.sidebar {
+  grid-area: sidebar;
+  background-color: #454d3e;
+  padding: 24px 16px;
 }
 
-nav a {
-  display: inline-block;
-  margin-right: 20px;
-  color: #454d3e;
+.sidebar-title {
+  color: #f7d38f;
+  font-weight: bold;
+}
+
+/* Flexbox stacks navigation links vertically */
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sidebar nav a {
+  color: #fffbef;
   text-decoration: none;
 }
 
-nav a:hover, nav a:focus {
+.sidebar nav a:hover,
+.sidebar nav a:focus {
+  color: #f7d38f;
   text-decoration: underline;
 }
 
-/* Search box */
+/* Main content uses the remaining Grid space */
 main {
+  grid-area: main;
+  width: 100%;
+  min-width: 0;
   max-width: 1120px;
   margin: 0 auto;
   padding: 20px;
@@ -159,7 +184,9 @@ main {
   color: #f7d38f;
 }
 
+/* Footer sits in the bottom Grid region */
 footer {
+  grid-area: footer;
   padding: 20px;
   text-align: center;
 }

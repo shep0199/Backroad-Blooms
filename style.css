@@ -131,18 +131,13 @@ main {
   margin-bottom: 4px;
 }
 
+/* Grid automatically adjusts product columns */
+/* Grid is used because products need rows and columns */
 .product-grid {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
   margin-top: 20px;
-}
-
-.four-columns {
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.three-columns {
-  grid-template-columns: repeat(3, 1fr);
 }
 
 .product-card {
@@ -173,7 +168,7 @@ main {
   border-radius: 8px;
 }
 
-/* STEP 5: About section and footer */
+/* About section and footer */
 .about-section {
   background-color: #454d3e;
   color: #fffbef;

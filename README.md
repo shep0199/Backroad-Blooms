@@ -103,3 +103,8 @@ Poppins is used for headings and Nunito Sans for body text.
 - Body text: Nunito Sans, 16px, line height 24px
 - Navigation: Nunito Sans, 16px, line height 24px
 - Social media text: Nunito Sans, 13px, line height 19.5px
+
+### Week 7 Assignment
+520px: two cards fit side by side (about 220px each) without looking cramped.
+760px: enough room for the 220px sidebar beside the products, so the menu moves to the side.
+960px: three cards fit beside the sidebar. The first Fall card spans the full row so the 4 Fall cards leave no gap.

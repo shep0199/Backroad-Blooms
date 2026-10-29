@@ -16,14 +16,14 @@ body {
   font-size: 16px;
   line-height: 1.5;
 
-  
-  /* Grid organizes the main page regions */
+   /* Grid, mobile base: one column, sidebar sits above the products */
   display: grid;
-  grid-template-columns: 220px 1fr;
+  grid-template-columns: 1fr;
   grid-template-areas:
-    "header header"
-    "sidebar main"
-    "footer footer";
+    "header"
+    "sidebar"
+    "main"
+    "footer";
 }
 
 h1, h2, h3 {
@@ -86,11 +86,11 @@ h2 {
   font-weight: bold;
 }
 
-/* Flexbox stacks navigation links vertically */
+/* Flexbox, mobile base: menu links sit in a row and wrap */
 .sidebar nav {
   display: flex;
-  flex-direction: column;
-  gap: 16px;
+  flex-wrap: wrap;
+  gap: 12px 20px;
 }
 
 .sidebar nav a {
@@ -201,7 +201,6 @@ main {
 /* Footer spans both columns from line 1 to line 3 */
 footer {
   grid-area: footer;
-  grid-column: 1 / span 2;
   padding: 20px;
   text-align: center;
 }

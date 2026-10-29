@@ -2,7 +2,11 @@
 * {
   box-sizing: border-box;
 }
-
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+}
 /* Main page Grid layout */
 body {
   margin: 0;

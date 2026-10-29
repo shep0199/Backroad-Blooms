@@ -32,7 +32,7 @@ h1, h2, h3 {
 
 /* Heading size and line height */
 h2 {
-  font-size: 24px;
+  font-size: clamp(1.5rem, 1.25rem + 1vw, 1.75rem);
   line-height: 1.3;
 }
 
@@ -59,7 +59,7 @@ h2 {
 
 .site-header h1 {
   margin: 0;
-  font-size: 32px;
+  font-size: clamp(1.5rem, 1rem + 2vw, 2rem);
   line-height: 1.2;
 }
 
@@ -144,6 +144,12 @@ main {
 .eyebrow {
   color: #c27f5f;
   margin-bottom: 4px;
+}
+
+/* Keep text lines readable on wide screens */
+.shop-section > p,
+.about-section p {
+  max-width: 65ch;
 }
 
 /* Grid automatically adjusts product columns */

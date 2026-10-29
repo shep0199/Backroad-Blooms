@@ -210,3 +210,41 @@ footer {
   padding: 20px;
   text-align: center;
 }
+
+/* ===== Breakpoints (mobile-first) ===== */
+
+/* 520px: two product cards fit side by side (~220px each) */
+@media (min-width: 520px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 760px: room for the sidebar beside the products */
+@media (min-width: 760px) {
+  body {
+    grid-template-columns: 220px 1fr;
+    grid-template-areas:
+      "header header"
+      "sidebar main"
+      "footer footer";
+  }
+  .sidebar nav {
+    flex-direction: column;
+    gap: 16px;
+  }
+  footer {
+    grid-column: 1 / span 2;
+  }
+}
+
+/* 960px: three product cards fit beside the sidebar */
+@media (min-width: 960px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  /* Featured: first Fall card spans the full row (the "wide spot") */
+  .featured .product-card:first-child {
+    grid-column: 1 / -1;
+  }
+}

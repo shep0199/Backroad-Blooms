@@ -165,6 +165,14 @@ main {
   background-color: #ffffff;
   padding: 15px;
   border-radius: 12px;
+  container-type: inline-size;
+  container-name: product;
+}
+
+.product-card .card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .product-card img {
@@ -246,5 +254,25 @@ footer {
   /* Featured: first Fall card spans the full row (the "wide spot") */
   .featured .product-card:first-child {
     grid-column: 1 / -1;
+  }
+}
+
+/* Container query: once a card is 420px+ wide, image sits beside the text */
+@container product (min-width: 420px) {
+  .card-content {
+    display: grid;
+    grid-template-columns: 45% 1fr;
+    column-gap: 20px;
+    align-items: center;
+  }
+  .card-content img {
+    grid-column: 1;
+    grid-row: 1 / span 3;
+    height: 100%;
+  }
+  .card-content h3,
+  .card-content p,
+  .card-content .cart-button {
+    grid-column: 2;
   }
 }

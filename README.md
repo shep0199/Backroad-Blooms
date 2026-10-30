@@ -135,3 +135,4 @@ Poppins is used for headings and Nunito Sans for body text.
 - Chrome DevTools: checked 320px to 1201px with no horizontal scroll.
 - Iphone 13: checked header, menu, product cards and About section.
 - Safari browser on Mac and Iphone
+- W3C CSS Validator:only flags `container-type`, `container-name` and `@container`. The validator doesn't support container queries yet, so these aren't real errors.

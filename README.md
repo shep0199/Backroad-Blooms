@@ -108,3 +108,30 @@ Poppins is used for headings and Nunito Sans for body text.
 520px: two cards fit side by side (about 220px each) without looking cramped.
 760px: enough room for the 220px sidebar beside the products, so the menu moves to the side.
 960px: three cards fit beside the sidebar. The first Fall card spans the full row so the 4 Fall cards leave no gap.
+
+### Container query
+- `.product-card` is a container (`container-type: inline-size`, `container-name: product`).
+- At 420px+ card width, the image sits beside the text using Grid.
+- Tested in two spots: the wide featured Harvest Sunrise card (image beside text) vs. the regular cards (stay stacked) at the same screen width.
+
+### Small-screen decisions (not shown in the desktop mockup)
+- **Sidebar menu:** moves above the products on phones, with links in a wrapping row, so every section stays reachable without a hidden menu.
+- **Product cards:** 1 column on phones instead of a sideways scroll, keeping the same product order as desktop.
+- **Featured card:** spans the full row at 960px+ so the Fall section stays balanced.
+- **Shop name:** shrinks on phones with clamp() so it fits beside the logo and cart. At 320px it wraps onto two lines, which still reads clearly.
+- **100dvh:** not used, since there's no full-screen section.
+
+### Fluid sizing
+- Shop name: `clamp(1.5rem, 1rem + 2vw, 2rem)`
+- Section headings (h2): `clamp(1.5rem, 1.25rem + 1vw, 1.75rem)`
+- Section intro text and About text capped at `max-width: 65ch`
+- `img { max-width: 100%; height: auto; }` applied site-wide
+
+### Flexbox and Grid
+- Flexbox: logo and shop name (`.brand`), sidebar menu (`.sidebar nav`)
+- Grid: page layout (`body`), header (`.site-header`), product grid (`.product-grid`), card layout in the container query (`.card-content`)
+
+### Testing
+- Chrome DevTools: checked 320px to 1201px with no horizontal scroll.
+- Iphone 13: checked header, menu, product cards and About section.
+- Safari browser on Mac and Iphone

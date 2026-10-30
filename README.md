@@ -113,13 +113,14 @@ Poppins is used for headings and Nunito Sans for body text.
 - `.product-card` is a container (`container-type: inline-size`, `container-name: product`).
 - At 420px+ card width, the image sits beside the text using Grid.
 - Tested in two spots: the wide featured Harvest Sunrise card (image beside text) vs. the regular cards (stay stacked) at the same screen width.
+- A media query couldn't do this, because the featured card and the regular cards are on the same screen at the same width. Only the card's own width is different.
 
 ### Small-screen decisions (not shown in the desktop mockup)
 - Sidebar menu:moves above the products on phones, with links in a wrapping row, so every section stays reachable without a hidden menu.
 - Product cards:1 column on phones instead of a sideways scroll, keeping the same product order as desktop.
 - Featured card:spans the full row at 960px+ so the Fall section stays balanced.
 - Shop name: shrinks on phones with clamp() so it fits beside the logo and cart. At 320px it wraps onto two lines, which still reads clearly.
-- 100dvh: not used, since there's no full-screen section.
+- 100dvh: not used, since there's no full-screen section. A full-height section using 100vh would have its bottom hidden behind the iPhone address bar, which 100dvh avoids.
 
 ### Fluid sizing
 - Shop name: `clamp(1.5rem, 1rem + 2vw, 2rem)`
@@ -136,3 +137,4 @@ Poppins is used for headings and Nunito Sans for body text.
 - Iphone 13: checked header, menu, product cards and About section.
 - Safari browser on Mac and Iphone
 - W3C CSS Validator:only flags `container-type`, `container-name` and `@container`. The validator doesn't support container queries yet, so these aren't real errors.
+- Finding fixed:testing at 1000px+ showed the container query wasn't applying, because `.product-card .card-content` was overriding it. I changed it to `.card-content` so the featured card now puts its image beside the text.
